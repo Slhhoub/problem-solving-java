@@ -8,6 +8,7 @@ import static org.schhoub.ChaineUnique.checkChaineCaractere;
 import static org.schhoub.ChaineUnique.checkRepeteCaracter;
 import static org.schhoub.ClasseNumber.classeNumber;
 import static org.schhoub.ClasseNumber.creationList;
+import static org.schhoub.inverséeString.getChaineCaracterInverce;
 
 public class Main {
     public static void main(String[] args) {
@@ -33,13 +34,15 @@ public class Main {
         System.out.println("--methode 2 avec foreach et hashMap est return combient repete chaque caratere --");
         checkRepeteCaracter("heelloo");
         System.out.println("-----| classer ces nombres du plus petit au plus grand. |-----");
-        // Étape 1 : Demande à l'utilisateur d'entrer 3 nombres
-        System.out.println("Entrez trois nombres entiers : ");
-        int number1 = scanner.nextInt();
-        int number2 = scanner.nextInt();
-        int number3 = scanner.nextInt();
-        int[] result = creationList(number1, number2, number3);
+        int[] result = creationList(2, 5, 6);
         System.out.println("Avant le tri : " + Arrays.toString(result));
         System.out.println("Après le tri : " + Arrays.toString(classeNumber(result)));
+        System.out.println("---------------| méthode en Java qui prend une chaîne de caractères comme entrée et retourne cette chaîne inversée . |-------------------- ");
+        getChaineCaracterInverce("salah");
+
     }
+
+
+
+
 }
